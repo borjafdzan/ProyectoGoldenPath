@@ -43,6 +43,7 @@ public class HelloManager : MonoBehaviour
     {
         if (GUILayout.Button(NetworkManager.Singleton.IsServer ? "Move" : "Request Position Change"))
         {
+            Debug.Log("Se perciebe una posicion");
             var playerObject = NetworkManager.Singleton.SpawnManager.GetLocalPlayerObject();
             var player = playerObject.GetComponent<HelloWorldPlayer>();
             player.Move();

@@ -22,6 +22,7 @@ public class HelloWorldPlayer : NetworkBehaviour
             var randomPosition = GetRandomPositionOnPlane();
             transform.position = randomPosition;
             Position.Value = randomPosition;
+            //Position.Value = new Vector3(1, 0, 0);
         }
         else
         {
